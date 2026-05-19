@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain-groq
+langchain-huggingface
+langchain-astradb
+langchain-community
+langchain-core
+astrapy
+python-dotenv
+pandas
+python-multipart
+groq
+sentence-transformers

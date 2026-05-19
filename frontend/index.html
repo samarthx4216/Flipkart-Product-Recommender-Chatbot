@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart AI Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <span class="logo-text">Flipkart</span>
+        <span class="ai-badge">AI Assistant</span>
+      </div>
+      <p class="subtitle">Your personal shopping assistant</p>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-container">
+      <div class="messages" id="messages">
+        <div class="message bot-message">
+          <div class="avatar">🤖</div>
+          <div class="bubble">
+            Hi! I'm your Flipkart AI assistant. 
+            Ask me anything about products — 
+            I'll help you find the best deals! 🛍️
+          </div>
+        </div>
+      </div>
+
+      <!-- Suggestions -->
+      <div class="suggestions" id="suggestions">
+        <button onclick="sendSuggestion('Best mobile under 20000')">
+          📱 Best mobile under 20000
+        </button>
+        <button onclick="sendSuggestion('Gaming laptop recommendations')">
+          💻 Gaming laptop recommendations
+        </button>
+        <button onclick="sendSuggestion('Best headphones for music')">
+          🎧 Best headphones for music
+        </button>
+        <button onclick="sendSuggestion('Smart TV under 30000')">
+          📺 Smart TV under 30000
+        </button>
+      </div>
+
+      <!-- Input -->
+      <div class="input-area">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask about any product..."
+          onkeypress="handleKeyPress(event)"
+        />
+        <button onclick="sendMessage()" id="sendBtn">
+          Send ➤
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
